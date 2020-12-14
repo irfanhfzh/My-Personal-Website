@@ -21,28 +21,6 @@
     <!-- JQUERY -->
     <script src="http://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
 
-    <style>
-        /* Go To Top */
-        #goTop {
-        display: none;
-        position: fixed;
-        bottom: 20px;
-        right: 30px;
-        z-index: 99;
-        font-size: 25px;
-        border: none;
-        outline: none;
-        background-color: #333333;
-        color: white;
-        cursor: pointer;
-        padding: 15px;
-        border-radius: 4px;
-        }
-        #goTop:hover {
-        background-color: #555;
-        }
-    </style>
-
     <title>Portfolio</title>
 </head>
 <body>

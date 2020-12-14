@@ -20,39 +20,16 @@
     <!-- JQUERY -->
     <script src="http://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
 
-    <style>
-        /* Go To Top */
-        #goTop {
-        display: none;
-        position: fixed;
-        bottom: 20px;
-        right: 30px;
-        z-index: 99;
-        font-size: 25px;
-        border: none;
-        outline: none;
-        background-color: #333333;
-        color: white;
-        cursor: pointer;
-        padding: 15px;
-        border-radius: 4px;
-        }
-        #goTop:hover {
-        background-color: #555;
-        }
-    </style>
-
     <title>panhpzh</title>
 </head>
 <body>
     <header id="navbar">
         <!--Navigation------------------------->
-        <nav class="shadow">
+        <nav class="shadow" id="home">
             <!--logo-->
             <a href="#" class="logo">PANHPZH</a>
             <!--Menu-->
             <ul id="Menu">
-                <!-- <li class="liquid1"></li> -->
                 <li><a href="#home" class="btn-menu active" onclick="filterSelection('home')" id="home-btnMenu">Home</a></li>
                 <li><a href="#about" class="btn-menu" onclick="filterSelection('about')" id="about-btnMenu">About</a></li>
                 <li><a href="#portfolio" class="btn-menu" onclick="filterSelection('portfolio')" id="portfolio-btnMenu">Portfolio</a></li>
@@ -63,7 +40,7 @@
         </nav>
     </header>
     <!-- Jumbotron -->
-    <section id="home">
+    <section>
     </section>
 
     <!--Content Jumbotron----------------------->
@@ -73,11 +50,13 @@
             <p>I&#8217;M IRFAN HAFIZH</p>
             <p>Unemployed Devotees <br>& Nolepers</p>
             <a href="menu/portfolio.php"><button class="hire-btn">My Projects</button></a>
-            <button class="down-cv" id="about">Hire Me</button>
+            <button class="down-cv"">Hire Me</button>
         </div>
         <!--Model---------------------->
         <img alt="model" class="model" src="source/images/personalweb_images/model5.png">
     <!-- Akhir Jumbotron -->
+
+        <div id="about"></div>    
 
         <!-- About -->
         <div class="about-container">
@@ -169,16 +148,16 @@
 
     <!--JQUery-------------------->
     <!--Javascript Toggle Mobile-------------------->
-    <script type="text/javascript" src="js/JQuery.js"></script>
     <!-- <script src="js/menu.js"></script> -->
     <!-- <script src="js/script.js"></script> -->
     <!-- Script Filter Category -->
+    <script type="text/javascript" src="js/JQuery.js"></script>
     <script type="text/javascript">
     $(document).ready(function(){
-        $('.toggle').click(function(){
-            $('.toggle').toggleClass('active')
-            $('nav').toggleClass('active')
-        })
+      $('.toggle').click(function(){
+        $('.toggle').toggleClass('active')
+        $('nav').toggleClass('active')
+      })
     })
 
     // Smooth Scrolling Javascript
@@ -223,18 +202,18 @@
     });
 
     /* When the user scrolls down, hide the navbar. When the user scrolls up, show the navbar */
-    var lastScrollTop = 0;
-        navbar = document.getElementById("navbar");
-    window.addEventListener("scroll", function(){
-        var scrollTop = window.pageYOffset || document
-            .documentElement.scrollTop;
-        if(scrollTop > lastScrollTop){
-            navbar.style.top = "-80px"
-        } else {
-            navbar.style.top = "0"
-        }
-        lastScrollTop = scrollTop;
-    })
+    // var lastScrollTop = 0;
+    //     navbar = document.getElementById("navbar");
+    // window.addEventListener("scroll", function(){
+    //     var scrollTop = window.pageYOffset || document
+    //         .documentElement.scrollTop;
+    //     if(scrollTop > lastScrollTop){
+    //         navbar.style.top = "-80px"
+    //     } else {
+    //         navbar.style.top = "0"
+    //     }
+    //     lastScrollTop = scrollTop;
+    // })
 
     //NAVBAR
     var header = document.getElementById("Menu");

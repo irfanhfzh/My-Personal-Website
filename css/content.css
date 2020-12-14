@@ -80,7 +80,7 @@ a{
 .toggle{
 	display: none;
 }
-.active, .btn-menu:hover {
+.btn-menu:hover {
 	border-radius: 10em;
 	background-color: #333333;
 	color: white;
@@ -243,14 +243,15 @@ a{
 	display: flex;
 	margin:0;
 	position: relative;
-	justify-content:space-evenly;
+	justify-content: space-evenly;
 	align-items: center;
 }
 .about-container img{
 	height:250px;
 }
 .about-text{
-	width:500px;
+	width: 500px;
+	text-align: justify;
 } 
 .about-text p:nth-child(1){
 	color:#1d1c1c;
@@ -368,15 +369,40 @@ footer{
 	font-size:20px;
 	color:#2B2B2B;
 }
+/* Go To Top */
+#goTop {
+	display: none;
+	position: fixed;
+	bottom: 20px;
+	right: 30px;
+	z-index: 99;
+	font-size: 25px;
+	border: none;
+	outline: none;
+	background-color: #333333;
+	color: white;
+	cursor: pointer;
+	padding: 15px;
+	border-radius: 4px;
+	}
+#goTop:hover {
+	background-color: #555;
+}
+
 
 /* Responsive */
-@media(max-width:1000px){
+@media(max-width:1024px){
 	*{
 		box-sizing: border-box;
 	}
-
+	.childBcrumbs{
+		width: 85%;
+	}
+	.parentPost{
+		width: 85%;
+	}
 }
-@media(max-width:750px){
+@media(max-width:768px){
 	section{
 		background-image:none;
 		background-color:#f7f7f7;
@@ -398,11 +424,11 @@ footer{
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		z-index: 1;
+		z-index: 100;
 		display: none;
 	}
 	nav ul li{
-		padding: 10px;
+		padding: 20px;
 	}
 	nav ul li a{
 		font-family: calibri;
@@ -417,7 +443,7 @@ footer{
 		content: '\f0c9';
 		font-family: fontAwesome;
 		line-height: 30px;
-		z-index: 1;
+		z-index: 10000;
 	}
 	.toggle.active:before{
 		content: '\f00d';
@@ -427,6 +453,67 @@ footer{
 	}
 	nav.active ul{
 		display: flex !important;
+	}
+	.bcrumbs a{
+		font-size: 0.85rem;
+	}
+	.childBcrumbs{
+		width: 90%;
+	}
+	.parentPost{
+		width: 90%;
+	}
+	.contentPost{
+		padding: 25px;
+	}
+	.metaCategory a {
+		font-size: 1.25rem;
+	}
+	.titlePost{
+		font-size: 1.5rem;
+	}
+	#titleDesc{
+		font-size: 0.8rem;
+	}
+	.article{
+		line-height: 1.75;
+		font-size: 1rem;
+	}
+	.about-container{
+		width:100%;
+		height:330px;
+		border-radius:20px;
+		margin:0;
+	}
+	.about-container img{
+		height:200px;
+		margin-left: 15px;
+	}
+	.about-text{
+		margin: 10px;
+	} 
+	.about-text p:nth-child(1){
+		font-size:25px;
+		line-height:0;
+	}
+	.about-text p:nth-child(2){
+		font-size:15px;
+		line-height:1;
+	}
+	.about-text p:nth-child(3),.about-text p:nth-child(4){
+		font-size:12px;
+		line-height: 1.2;
+	}
+	.about-text button{
+		width:90px;
+		height: 30px;
+	}
+	.social a{
+		width: 40px;
+		height: 40px;
+	}
+	#goTop{
+		font-size: 15px;
 	}
 	footer p:nth-child(2){
 		width: 90%;
