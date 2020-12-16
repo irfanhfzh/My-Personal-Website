@@ -1,10 +1,3 @@
-<?php
-  //default value
-  $category = '';
-  if(isset($_GET['category']) && !empty($_GET['category'])){
-  $category = $_GET['category'];
-  }
-?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -18,7 +11,7 @@
     <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
 
     <!-- JQUERY -->
-    <script src="http://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" crossorigin="anonymous"></script>
 
     <title>panhpzh</title>
 </head>
@@ -30,7 +23,7 @@
             <a href="#" class="logo">PANHPZH</a>
             <!--Menu-->
             <ul id="Menu">
-                <li><a href="#home" class="btn-menu active" onclick="filterSelection('home')" id="home-btnMenu">Home</a></li>
+                <li><a href="#home" class="btn-menu actived" onclick="filterSelection('home')" id="home-btnMenu">Home</a></li>
                 <li><a href="#about" class="btn-menu" onclick="filterSelection('about')" id="about-btnMenu">About</a></li>
                 <li><a href="#portfolio" class="btn-menu" onclick="filterSelection('portfolio')" id="portfolio-btnMenu">Portfolio</a></li>
                 <li><a href="#contact" class="btn-menu" onclick="filterSelection('contact')" id="contact-btnMenu">Contact</a></li>
@@ -151,7 +144,6 @@
     <!-- <script src="js/menu.js"></script> -->
     <!-- <script src="js/script.js"></script> -->
     <!-- Script Filter Category -->
-    <script type="text/javascript" src="js/JQuery.js"></script>
     <script type="text/javascript">
     $(document).ready(function(){
       $('.toggle').click(function(){
@@ -201,21 +193,7 @@
     }); 
     });
 
-    /* When the user scrolls down, hide the navbar. When the user scrolls up, show the navbar */
-    // var lastScrollTop = 0;
-    //     navbar = document.getElementById("navbar");
-    // window.addEventListener("scroll", function(){
-    //     var scrollTop = window.pageYOffset || document
-    //         .documentElement.scrollTop;
-    //     if(scrollTop > lastScrollTop){
-    //         navbar.style.top = "-80px"
-    //     } else {
-    //         navbar.style.top = "0"
-    //     }
-    //     lastScrollTop = scrollTop;
-    // })
-
-    //NAVBAR
+    //NAVBAR ACTIVE
     var header = document.getElementById("Menu");
     var btns = header.getElementsByClassName("btn-menu");
     for (var i = 0; i < btns.length; i++) {
@@ -226,20 +204,6 @@
     });
     }
 
-    //EDIT
-    //create an array of all the categories called all_categories.
-    let all_categories = ['home', 'about', 'portfolio', 'contact'];
-    let fromURL = '<?php echo $category;?>';
-    /*****************
-    In the accepted variable, we check if the query string belong to our defined values. If not, we just filterSelection() without scrolling to #myprojects. But if it belongs, then we click the button with the id which will automatically scroll to #myprojects.
-    The fromURL if it exists should be one of the ids of the myBtnContainer buttons without '-btn' so we need to get this button and dynamically click it as you would do manually. This button will have its class changed because we are below where the method is written - line 222 and filterSelection(parameter) will be called with the appropriate parameter.
-    To get the button by its Id, we simply append '-btn' to fromURL variable and then call js click() method on it as follows
-    *****************/
-    if (all_categories.includes(fromURL)) {
-      document.getElementById(fromURL + '-btnMenu').click(); 
-     }else{
-      filterSelection('home');
-     }
     </script>
 </body>
 </html>
