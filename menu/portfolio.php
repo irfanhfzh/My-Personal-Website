@@ -19,9 +19,9 @@
     <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
 
     <!-- JQUERY -->
-    <script src="http://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" crossorigin="anonymous"></script>
 
-    <title>Portfolio</title>
+    <title>Portfolio - PANHPZH</title>
 </head>
 <body>
     <!-- Header -->
@@ -29,7 +29,7 @@
     <!--Navigation------------------------->
         <nav class="shadow">
             <!--Logo-->
-            <a href="#" class="logo">PANHPZH</a>
+            <a href="../index.php" class="logo">PANHPZH</a>
             <!--Menu-->
             <ul id="Menu">
                 <!-- <li class="liquid1"></li> -->
@@ -88,13 +88,13 @@
                   <div class="card-body">
                       <p class="blog-hashtag"><i class="fas fa-calendar-alt"></i> Kamis, 19 November 2020</p>
                       <h2 class="blog-title">Membuat Portfolio Post dengan JavaScript dan PHP secara simple</h2>
-                      <p class="blog-description">My thoughts on the future of front end web development</p>
+                      <p class="blog-description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam, natus eveniet quos asperiores doloribus itaque iusto dicta distinctio quod.</p>
                   </div>
               </div>
                 </a>
             </div>
             <div class="filterDiv 3d">
-                <a href="../index.php">
+                <a href="../content/3d/01_3d.php">
               <div id="card">
                   <div class="card-banner">
                       <p class="category-tag banner">3D Creation</p>
@@ -102,14 +102,14 @@
                   </div>
                   <div class="card-body">
                       <p class="blog-hashtag"><i class="fas fa-calendar-alt"></i> Kamis, 19 November 2020</p></p>
-                      <h2 class="blog-title">Photography gear you need this year</h2>
-                      <p class="blog-description">Looking to upgrade your gear? Here is the list of the best photography tools for this year</p>
+                      <h2 class="blog-title">The Content is Coming Soon</h2>
+                      <p class="blog-description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam, natus eveniet quos asperiores doloribus itaque iusto dicta distinctio quod.</p>
                   </div>
               </div>
                 </a>
             </div>
             <div class="filterDiv design">
-                <a href="../index.php">
+                <a href="../content/design/01_d.php">
               <div id="card">
                   <div class="card-banner">
                       <p class="category-tag banner">Graphic Design</p>
@@ -117,53 +117,83 @@
                   </div>
                   <div class="card-body">
                       <p class="blog-hashtag"><i class="fas fa-calendar-alt"></i> Kamis, 19 November 2020</p></p>
-                      <h2 class="blog-title">Mediation and Mental Wellness Best Practices</h2>
-                      <p class="blog-description">Mediation has transformed my life. These are the best practices to get into the habit</p>
+                      <h2 class="blog-title">The Content is Coming Soon</h2>
+                      <p class="blog-description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam, natus eveniet quos asperiores doloribus itaque iusto dicta distinctio quod.</p>
+                  </div>
+              </div>
+                </a>
+            </div>
+            <div class="filterDiv game">
+                <a href="../content/game/01_g.php">
+              <div id="card">
+                  <div class="card-banner">
+                      <p class="category-tag banner">Game Development</p>
+                      <img class="banner-img" src='https://miro.medium.com/max/5000/1*jMDG7pTIaVeP5bQnE1RuXg.png' alt=''>
+                  </div>
+                  <div class="card-body">
+                      <p class="blog-hashtag"><i class="fas fa-calendar-alt"></i> Kamis, 19 November 2020</p></p>
+                      <h2 class="blog-title">The Content is Coming Soon</h2>
+                      <p class="blog-description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam, natus eveniet quos asperiores doloribus itaque iusto dicta distinctio quod.</p>
                   </div>
               </div>
                 </a>
             </div>
             <div class="filterDiv programming">
-                <a href="../index.php">
+                <a href="../content/programming/02_p.php">
               <div id="card">
                   <div class="card-banner">
                       <p class="category-tag banner">Programming</p>
-                      <img class="banner-img" src='https://images.unsplash.com/photo-1515879218367-8466d910aaa4?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ' alt=''>
+                      <img class="banner-img" src='../source/images/personalweb_images/comingsoon.jpg' alt=''>
                   </div>
                   <div class="card-body">
                       <p class="blog-hashtag"><i class="fas fa-calendar-alt"></i> Kamis, 19 November 2020</p>
-                      <h2 class="blog-title">What is the future of front end development?</h2>
-                      <p class="blog-description">My thoughts on the future of front end web development</p>
+                      <h2 class="blog-title">The Content is Coming Soon</h2>
+                      <p class="blog-description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam, natus eveniet quos asperiores doloribus itaque iusto dicta distinctio quod.</p>
                   </div>
               </div>
                 </a>
             </div>
             <div class="filterDiv 3d">
-                <a href="../index.php">
+                <a href="../content/3d/02_3d.php">
               <div id="card">
                   <div class="card-banner">
                       <p class="category-tag banner">3D Creation</p>
-                      <img class="banner-img" src='https://images.unsplash.com/photo-1413708617479-50918bc877eb?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ' alt=''>
+                      <img class="banner-img" src='../source/images/personalweb_images/comingsoon.jpg' alt=''>
                   </div>
                   <div class="card-body">
                       <p class="blog-hashtag"><i class="fas fa-calendar-alt"></i> Kamis, 19 November 2020</p></p>
-                      <h2 class="blog-title">Photography gear you need this year</h2>
-                      <p class="blog-description">Looking to upgrade your gear? Here is the list of the best photography tools for this year</p>
+                      <h2 class="blog-title">The Content is Coming Soon</h2>
+                      <p class="blog-description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam, natus eveniet quos asperiores doloribus itaque iusto dicta distinctio quod.</p>
                   </div>
               </div>
                 </a>
             </div>
             <div class="filterDiv design">
-                <a href="../index.php">
+                <a href="../content/design/02_d.php">
               <div id="card">
                   <div class="card-banner">
                       <p class="category-tag banner">Graphic Design</p>
-                      <img class="banner-img" src='https://images.unsplash.com/photo-1592496001020-d31bd830651f?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ' alt=''>
+                      <img class="banner-img" src='../source/images/personalweb_images/comingsoon.jpg' alt=''>
                   </div>
                   <div class="card-body">
                       <p class="blog-hashtag"><i class="fas fa-calendar-alt"></i> Kamis, 19 November 2020</p></p>
-                      <h2 class="blog-title">Mediation and Mental Wellness Best Practices</h2>
-                      <p class="blog-description">Mediation has transformed my life. These are the best practices to get into the habit</p>
+                      <h2 class="blog-title">The Content is Coming Soon</h2>
+                      <p class="blog-description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam, natus eveniet quos asperiores doloribus itaque iusto dicta distinctio quod.</p>
+                  </div>
+              </div>
+                </a>
+            </div>
+            <div class="filterDiv game">
+                <a href="../content/game/02_g.php">
+              <div id="card">
+                  <div class="card-banner">
+                      <p class="category-tag banner">Game Development</p>
+                      <img class="banner-img" src='../source/images/personalweb_images/comingsoon.jpg' alt=''>
+                  </div>
+                  <div class="card-body">
+                      <p class="blog-hashtag"><i class="fas fa-calendar-alt"></i> Kamis, 19 November 2020</p></p>
+                      <h2 class="blog-title">The Content is Coming Soon</h2>
+                      <p class="blog-description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam, natus eveniet quos asperiores doloribus itaque iusto dicta distinctio quod.</p>
                   </div>
               </div>
                 </a>
@@ -184,7 +214,7 @@
     <div class="social-icons">
         <a href="https://www.facebook.com/irfan.hafizh.28" target="_blank"><i class="fab fa-facebook-f"></i></a>
         <a href="https://twitter.com/DenGregets" target="_blank"><i class="fab fa-twitter"></i></a>
-        <a href="https://www.instagram.com/fanhfzh/" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.instagram.com/panhpzh/" target="_blank"><i class="fab fa-instagram"></i></a>
         <a href="https://www.youtube.com/channel/UCRHP73tWc5waTnyTrwbfe9A" target="_blank"><i class="fab fa-youtube"></i></a>
     </div>
         <!--copyright-->
@@ -196,7 +226,7 @@
     <div class="social">
         <a href="https://www.facebook.com/irfan.hafizh.28" target="_blank"><i class="fab fa-facebook-f"></i></a>
         <a href="https://twitter.com/DenGregets" target="_blank"><i class="fab fa-twitter"></i></a>
-        <a href="https://www.instagram.com/fanhfzh/" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.instagram.com/panhpzh/" target="_blank"><i class="fab fa-instagram"></i></a>
         <a href="https://www.youtube.com/channel/UCRHP73tWc5waTnyTrwbfe9A" target="_blank"><i class="fab fa-youtube"></i></a>
     </div>
 
@@ -205,7 +235,6 @@
 
     <!--JQUery-------------------->
     <!--Javascript Toggle Mobile-------------------->
-    <script type="text/javascript" src="js/JQuery.js"></script>
     <!-- <script src="../js/menu.js"></script> -->
     <!-- Script Filter Category -->
     <script type="text/javascript">

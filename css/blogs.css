@@ -1,0 +1,65 @@
+/**
+Written on 18/12/2020 by Julius Ekane.
+WhatsApp  ~ +971566366808
+email ~ ekanejulius7@gmail.com || julius404@outlook.com
+website ~ Under construction
+
+You can alter this file as you wish and don't forget to contact me for any clarifications
+*/
+body{
+	margin: 0;
+	overflow-x: hidden;
+}
+.header{
+	position: sticky;
+	top:0;
+	width: 100%;
+	padding: 5px;
+	background: black;
+	color: whitesmoke;
+	font-size: 1.5em;
+	z-index: +1;
+}
+.blog-content{
+  padding: 5px;
+}
+.blog-dates{
+	width: 100%;
+	padding: 5px;
+	background: rgba(220,220,220,0.5);
+}
+.blog-dates #updated{
+	float: right;
+	margin-right: 10px;
+}
+.delete-blog, .update-blog{
+	font-size: 1.2em;
+	margin: 5px;
+	width: auto;
+}
+.delete-blog{
+	color: red;
+}
+.title{
+	background: whitesmoke;
+	padding: 5px;
+	font-size: 1.5em;
+	margin: 0 0 0 -5px;
+	position: sticky;
+	top: 0;
+	width: 100%;
+}
+    .add-new{
+			background: black;
+			color:whitesmoke;
+			font-size: 1.3em;
+			padding: 8px 14px 8px 14px;
+			border-radius: 20px;
+			position: fixed;
+			bottom: 10px;
+			right: 10px;
+			text-decoration: none;
+		}
+		.add-new:hover{
+			box-shadow: 0 4px 8px 0 gray;
+		}

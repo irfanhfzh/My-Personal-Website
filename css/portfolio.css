@@ -259,6 +259,9 @@ div #myprojects{
 	font-weight: 500;
 	color: var(--clr-link);
 }
+.blog-hashtag i {
+	margin-right: 5px;
+}
 .blog-title {
 	margin: 1rem 0 0.5rem;
 	text-transform: uppercase;
@@ -451,7 +454,7 @@ footer{
 @media(max-width:768px){
 	section{
 		width: 100%;
-		height: 70vh;
+		height: 65vh;
 		background-image:url("../source/images/personalweb_images/bg9m.png");
 		background-size: cover;
 		background-repeat: no-repeat;
@@ -522,7 +525,7 @@ footer{
 		display: flex !important;
 	}
 	.btn {
-		font-size: 12px;
+		font-size: 14px;
 		padding: 10px;
 		margin: 2.5px;
 	}
@@ -535,5 +538,23 @@ footer{
 	}
 	footer p:nth-child(2){
 		width: 90%;
+	}
+}
+@media (min-width: 320px) and (max-width: 480px) {
+	.text-container p:nth-child(1){
+		font-size: 27px;
+	}
+	.text-container p:nth-child(2){
+		font-size: 40px;
+	}
+	.text-container p:nth-child(3){
+		font-size: 23px;
+	}
+	.text-container button{
+		width: 100px;
+		height: 35px;
+	}
+	#card{
+		width: 275px;
 	}
 }

@@ -1,7 +1,58 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
+<?php
+/**
+Written on 18/12/2020 by Julius Ekane.
+WhatsApp  ~ +971566366808
+email ~ ekanejulius7@gmail.com || julius404@outlook.com
+website ~ Under construction
 
+You can alter this file as you wish and don't forget to contact me for any clarifications
+*/
+require 'dbconnections.php';
+require 'functions.php';
+if (isset($_POST['submit'])) {
+$title = $connection->real_escape_string($_POST['title']);
+$date = date('d/m/y, h:ia');
+$body = $connection->real_escape_string($_POST['body']);
+if (isset($_POST['blogId'])) {
+$blogId = $_POST['blogId'];
+$connection->query("UPDATE blogs SET title = '$title', content = '$body', last_updated = '$date' WHERE id = $blogId");
+echo "Your blog has been updated successfully, <a href = 'blogs/" . $blogId . "'>Click to view </a>";
+}else{
+/*
+Create a unique new blog id as follows
+Blog ids according to my project should be atleast 4 characters long
+*/
+$connection->query("INSERT INTO blogs(content, title, date_created, last_updated) VALUES('$body', '$title', '$date', '$date')");
+$newBlogSN = $connection->insert_id;
+$newBlogID = make_blog_id_from($newBlogSN);// found in funtions.php
+$connection->query("UPDATE blogs SET id = '$newBlogID' WHERE sn = $newBlogSN");
+//Now let's create the actual page.
+$f1 = '$blogID = get_blog_id_from_url();';
+$f2_1 = '$sql = $connection->query(blog_select($blogID)); //blog_select(id) is found in functions.php';
+$f2_2 = 'if ($sql->num_rows == 0) {';
+$f2_3 = 'echo message_for_empty_blog(); // message_for_empty_blog() is found in functions.php';
+$f2_4 = '$blog = $sql->fetch_assoc();';
+$f2_5 = 'echo "<h1>" . $blog[\'title\'] . "</h1>" .
+         "<div class=\'blog-dates\'><span id = \'created\'>Date created: " . 
+         good_date($blog[\'date_created\']) . 
+         "</span><span id=\'updated\'>Last updated: " . 
+         good_date($blog[\'last_updated\']) . 
+         "</span></div>" .
+         "<div class = \'blog-content\'>" . 
+         $blog[\'content\'] . 
+         "</div>" .
+         "<a href = \'../../delete.php?blogId=" . $blogID . "\' class = \'delete-blog\'>Delete this blog </a>" . 
+         "<a href = \'../../editor.php?blogId=" . $blogID . "\' class = \'update-blog\'>Update this blog </a>" .
+         "<a title = \'Create new blog\' href=\'../../editor.php\' class=\'add-new\'>+</a>";';
+$html = <<<_END
+<?php
+require '../../functions.php';
+require '../../dbconnections.php';
+$f1// from functions.php
+?>
+<!DOCTYPE html>
+<html>
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -14,11 +65,7 @@
     <!-- JQUERY -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" crossorigin="anonymous"></script>
 
-    <style>
-
-    </style>
-
-    <title>Membuat Portfolio Post dengan JavaScript dan PHP secara simple - PANHPZH</title>
+	<title> $title - PANHPZH </title>
 </head>
 <body>
     <!-- Header -->
@@ -51,7 +98,7 @@
                     <p> >> </p>
                     <a href="../../menu/portfolio.php">Portfolio</a>
                     <p> >> </p>
-                    <a href="#">Membuat Portfolio Post dengan JavaScript dan PHP secara simple</a>
+                    <a href="#">$title</a>
                 </div>
             </div>
         </div>
@@ -65,21 +112,19 @@
                         <a class="categoryPost" href="../../menu/portfolio.php?category=programming#myprojects">Programming</a>
                     </div>
                     <div class="metaTitle">
-                        <h1 class="titlePost">Membuat Portfolio Post dengan JavaScript dan PHP secara simple</h1>
+                        <h1 class="titlePost">$title</h1>
                         <div id="titleDesc">
-                            <p class="date"><i class="fas fa-calendar-alt"></i> Kamis, 19 November 2020</p>
+                            <p class="date"><i class="fas fa-calendar-alt">  $date</i></p>
                             <p class="written">Written by <a href="../../index.php#about">Irfan Hafizh</a></p>
                         </div>
                     </div>
                     <hr>
                     <div class="thumbnailPost">
-                        <img src="../../source/images/personalweb_images/program.jpg" alt="Membuat Portfolio Post dengan JavaScript dan PHP secara simple">
+                        <img src="../../source/images/personalweb_images/program.jpg" alt="">
                     </div>
                     <hr>
                     <div class="article">
-                        <p><b><i>Membuat Portfolio Post dengan JavaScript dan PHP secara simple</i></b> - Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-                        <h2></h2>
-                        <p></p>
+                        $body
                         <div class="btnArticle">
                             <button>Demo View</button>
                             <button><i class="fab fa-github"></i>  GitHub</button>
@@ -164,5 +209,17 @@
     }); 
     });
     </script>
+    <script src = "../../js/blogs.js"></script>
 </body>
 </html>
+_END;
+$dir = 'blogs/' . $newBlogID;
+mkdir($dir, 0777, true);
+$f = fopen($dir . '/index.php', 'w') or die();
+fwrite($f, $html);
+fclose($f);
+echo "New blog created successfully <a href = '$dir'>Click to view </a>";
+}
+}else{
+    echo "Nothing to handle";
+}

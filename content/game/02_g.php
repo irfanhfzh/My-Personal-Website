@@ -51,7 +51,7 @@
                     <p> >> </p>
                     <a href="../../menu/portfolio.php">Portfolio</a>
                     <p> >> </p>
-                    <a href="#">Membuat Portfolio Post dengan JavaScript dan PHP secara simple</a>
+                    <a href="#">The Content is Coming Soon</a>
                 </div>
             </div>
         </div>
@@ -62,10 +62,10 @@
                     <div class="metaCategory">
                         <a class="title" href="../../menu/portfolio.php">Portfolio</a>
                         <p> - </p>
-                        <a class="categoryPost" href="../../menu/portfolio.php?category=programming#myprojects">Programming</a>
+                        <a class="categoryPost" href="../../menu/portfolio.php?category=game#myprojects">Game Development</a>
                     </div>
                     <div class="metaTitle">
-                        <h1 class="titlePost">Membuat Portfolio Post dengan JavaScript dan PHP secara simple</h1>
+                        <h1 class="titlePost">The Content is Coming Soon</h1>
                         <div id="titleDesc">
                             <p class="date"><i class="fas fa-calendar-alt"></i> Kamis, 19 November 2020</p>
                             <p class="written">Written by <a href="../../index.php#about">Irfan Hafizh</a></p>
@@ -73,11 +73,11 @@
                     </div>
                     <hr>
                     <div class="thumbnailPost">
-                        <img src="../../source/images/personalweb_images/program.jpg" alt="Membuat Portfolio Post dengan JavaScript dan PHP secara simple">
+                        <img src="../../source/images/personalweb_images/404notfound.png" alt="Membuat Portfolio Post dengan JavaScript dan PHP secara simple">
                     </div>
                     <hr>
                     <div class="article">
-                        <p><b><i>Membuat Portfolio Post dengan JavaScript dan PHP secara simple</i></b> - Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                        <p><b><i>The Content is Coming Soon</i></b> - Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
                         <h2></h2>
                         <p></p>
                         <div class="btnArticle">
