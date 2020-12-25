@@ -67,7 +67,7 @@ $blogID = get_blog_id_from_url();// from functions.php
                     <div class="metaTitle">
                         <h1 class="titlePost">My new blog 1</h1>
                         <div id="titleDesc">
-                            <p class="date"><i class="fas fa-calendar-alt">  20/12/20, 06:41am</i></p>
+                            <p class="date"><i class="fas fa-calendar-alt">  23/12/20, 05:29pm</i></p>
                             <p class="written">Written by <a href="../../index.php#about">Irfan Hafizh</a></p>
                         </div>
                     </div>
@@ -77,7 +77,7 @@ $blogID = get_blog_id_from_url();// from functions.php
                     </div>
                     <hr>
                     <div class="article">
-                        <p>Halloo guyy Irfan Hafizh nihhh</p>What is Lorem Ipsum?<p></p>\r\nLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                        eqcfedqwcfnduiqgcfdiquwdcuqw<p>cdgqcw8d7cgqwd7cgquwgcdqcdqc<p>cqvdycfqgcduioqgcduqgcdiuqgcdqiucdg</p></p>
                         <div class="btnArticle">
                             <button>Demo View</button>
                             <button><i class="fab fa-github"></i>  GitHub</button>

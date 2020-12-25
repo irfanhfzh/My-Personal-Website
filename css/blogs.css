@@ -63,3 +63,23 @@ body{
 		.add-new:hover{
 			box-shadow: 0 4px 8px 0 gray;
 		}
+        a{
+			text-decoration: none;
+		}
+		a.blog-link{
+		display: block;
+		background: whitesmoke;
+        margin: 8px;
+        padding: 8px;
+        position: relative;
+		}
+		a .blog-hint{
+         font-size: 1.4em;
+		}
+		a span{
+			position: absolute;
+			bottom: 4px;
+			right: 5px;
+			background: whitesmoke;
+			padding: 4px;
+		}

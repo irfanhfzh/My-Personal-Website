@@ -10,19 +10,24 @@ You can alter this file as you wish and don't forget to contact me for any clari
 require 'dbconnections.php';
 require 'functions.php';
 if (isset($_POST['submit'])) {
-$title = $connection->real_escape_string($_POST['title']);
 $date = date('d/m/y, h:ia');
+$title = $connection->real_escape_string($_POST['title']);
 $body = $connection->real_escape_string($_POST['body']);
+//$id = $_POST['blogId'];
 if (isset($_POST['blogId'])) {
 $blogId = $_POST['blogId'];
 $connection->query("UPDATE blogs SET title = '$title', content = '$body', last_updated = '$date' WHERE id = $blogId");
 echo "Your blog has been updated successfully, <a href = 'blogs/" . $blogId . "'>Click to view </a>";
 }else{
+if($connection->query("INSERT INTO blogs(id, content, title, date_created, last_updated) VALUES('$id', '$body', '$title', '$date', '$date')")) {
+  echo "Inserted";
+} else {
+ echo "Failed";
+}
 /*
 Create a unique new blog id as follows
 Blog ids according to my project should be atleast 4 characters long
 */
-$connection->query("INSERT INTO blogs(content, title, date_created, last_updated) VALUES('$body', '$title', '$date', '$date')");
 $newBlogSN = $connection->insert_id;
 $newBlogID = make_blog_id_from($newBlogSN);// found in funtions.php
 $connection->query("UPDATE blogs SET id = '$newBlogID' WHERE sn = $newBlogSN");

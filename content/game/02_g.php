@@ -118,11 +118,7 @@
     <div class="social-icons">
         <a href="https://www.facebook.com/irfan.hafizh.28" target="_blank"><i class="fab fa-facebook-f"></i></a>
         <a href="https://twitter.com/DenGregets" target="_blank"><i class="fab fa-twitter"></i></a>
-<<<<<<< HEAD
         <a href="https://www.instagram.com/panhpzh/" target="_blank"><i class="fab fa-instagram"></i></a>
-=======
-        <a href="https://www.instagram.com/fanhfzh/" target="_blank"><i class="fab fa-instagram"></i></a>
->>>>>>> e88a56015da4805bd7e5f1886f8739f44739dad1
         <a href="https://www.youtube.com/channel/UCRHP73tWc5waTnyTrwbfe9A" target="_blank"><i class="fab fa-youtube"></i></a>
     </div>
         <!--copyright-->
@@ -134,11 +130,7 @@
     <div class="social">
         <a href="https://www.facebook.com/irfan.hafizh.28" target="_blank"><i class="fab fa-facebook-f"></i></a>
         <a href="https://twitter.com/DenGregets" target="_blank"><i class="fab fa-twitter"></i></a>
-<<<<<<< HEAD
         <a href="https://www.instagram.com/panhpzh/" target="_blank"><i class="fab fa-instagram"></i></a>
-=======
-        <a href="https://www.instagram.com/fanhfzh/" target="_blank"><i class="fab fa-instagram"></i></a>
->>>>>>> e88a56015da4805bd7e5f1886f8739f44739dad1
         <a href="https://www.youtube.com/channel/UCRHP73tWc5waTnyTrwbfe9A" target="_blank"><i class="fab fa-youtube"></i></a>
     </div>
 

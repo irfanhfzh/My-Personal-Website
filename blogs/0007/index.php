@@ -1,7 +1,11 @@
+<?php
+require '../../functions.php';
+require '../../dbconnections.php';
+$blogID = get_blog_id_from_url();// from functions.php
+?>
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -14,11 +18,7 @@
     <!-- JQUERY -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" crossorigin="anonymous"></script>
 
-    <style>
-
-    </style>
-
-    <title>Membuat Portfolio Post dengan JavaScript dan PHP secara simple - PANHPZH</title>
+	<title> My new blog 7 - PANHPZH </title>
 </head>
 <body>
     <!-- Header -->
@@ -51,7 +51,7 @@
                     <p> >> </p>
                     <a href="../../menu/portfolio.php">Portfolio</a>
                     <p> >> </p>
-                    <a href="#">The Content is Coming Soon</a>
+                    <a href="#">My new blog 7</a>
                 </div>
             </div>
         </div>
@@ -65,21 +65,19 @@
                         <a class="categoryPost" href="../../menu/portfolio.php?category=programming#myprojects">Programming</a>
                     </div>
                     <div class="metaTitle">
-                        <h1 class="titlePost">The Content is Coming Soon</h1>
+                        <h1 class="titlePost">My new blog 7</h1>
                         <div id="titleDesc">
-                            <p class="date"><i class="fas fa-calendar-alt"></i> Kamis, 19 November 2020</p>
+                            <p class="date"><i class="fas fa-calendar-alt">  23/12/20, 06:00pm</i></p>
                             <p class="written">Written by <a href="../../index.php#about">Irfan Hafizh</a></p>
                         </div>
                     </div>
                     <hr>
                     <div class="thumbnailPost">
-                        <img src="../../source/images/personalweb_images/404notfound.png" alt="Membuat Portfolio Post dengan JavaScript dan PHP secara simple">
+                        <img src="../../source/images/personalweb_images/program.jpg" alt="">
                     </div>
                     <hr>
                     <div class="article">
-                        <p><b><i>The Content is Coming Soon</i></b> - Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-                        <h2></h2>
-                        <p></p>
+                                                <p><b><i>Membuat Portfolio Post dengan JavaScript dan PHP secara simple</i></b> - Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>\r\n                        <h2></h2>\r\n                        <p></p>\r\n                        <div class=\"btnArticle\">\r\n                            <button>Demo View</button>\r\n                            <button><i class=\"fab fa-github\"></i>  GitHub</button>\r\n                        </div>
                         <div class="btnArticle">
                             <button>Demo View</button>
                             <button><i class="fab fa-github"></i>  GitHub</button>
@@ -119,7 +117,6 @@
         <a href="https://www.facebook.com/irfan.hafizh.28" target="_blank"><i class="fab fa-facebook-f"></i></a>
         <a href="https://twitter.com/DenGregets" target="_blank"><i class="fab fa-twitter"></i></a>
         <a href="https://www.instagram.com/panhpzh/" target="_blank"><i class="fab fa-instagram"></i></a>
-        <a href="https://www.instagram.com/fanhfzh/" target="_blank"><i class="fab fa-instagram"></i></a>
         <a href="https://www.youtube.com/channel/UCRHP73tWc5waTnyTrwbfe9A" target="_blank"><i class="fab fa-youtube"></i></a>
     </div>
         <!--copyright-->
@@ -165,5 +162,6 @@
     }); 
     });
     </script>
+    <script src = "../../js/blogs.js"></script>
 </body>
 </html>
